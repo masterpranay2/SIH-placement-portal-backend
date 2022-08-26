@@ -1,0 +1,74 @@
+### Homepage
+GET http://localhost:5000/
+
+### Register Student ( TODO : Add more details )
+POST http://masterlinux:5000/api/student/register
+Content-Type: application/json
+
+{
+  "email" : "testuser2@gmail.com",
+  "password" : "abcd1234",
+  "institution" : "62d835ed98a7fa9b7020d6bd"
+}
+
+### Login Student ( TODO : Add more details )
+POST http://masterlinux:5000/api/student/login
+Content-Type: application/json
+
+{
+  "email" : "testuser2@gmail.com",
+  "password" : "abcd1234"
+}
+
+### Logout Student
+POST http://masterlinux:5000/api/student/logout
+
+### Register Institution
+POST http://masterlinux:5000/api/institution/register
+Content-Type: application/json
+
+{
+  "email" : "chandigarhUniversity@outlook.com",
+  "password" : "abcd1234",
+  "institution_id" : "12345",
+  "institution_name" : "Chandigarh University"
+}
+
+### Register Student 
+POST http://masterlinux:5000/api/student/register
+Content-Type: application/json
+
+{
+  "email" : "studetn@mai.co",
+  "password" : "abcd1234",
+  "company_name" : "Chandigarh University",
+  "degree" : "B.Tech",
+  "job_position" : "Software Engineer",
+  "name" : "Student",
+  "institution" : "6305071c245f2e79fd118811"
+}
+
+### placement data
+GET http://localhost:5000/api/student/placementdata
+
+### Get Higher Education Data
+GET http://localhost:5000/api/student/highereducationdata
+
+
+### Login Institution
+POST http://masterlinux:5000/api/institution/login
+Content-Type: application/json
+
+{
+  "email" : "iamviz@gmail.hu",
+  "password" : "naamviz"
+}
+
+### Register Admin
+POST http://localhost:5000/api/government/register
+Content-Type: application/json
+
+{
+  "email" : "admin@gmail.com",
+  "password" : "abcd1234"
+}
